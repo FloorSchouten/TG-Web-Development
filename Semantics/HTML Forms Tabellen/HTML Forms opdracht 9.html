@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Afspraak maken dokterspraktijk Brekebeentje</h1>
+  <br>
+  <br>
+    <form>
+        <label for="voornaam">Uw voornaam: </label>
+        <input type="text" id="voornaam">
+    </form>
+  <br>
+  <br>
+    <form>
+        <label for="achternaam">Uw achternaam:</label>
+        <input type="text" id="achternaam">
+    </form>
+  <br>
+  <br>
+    <form>
+        <label for="geboortedatum">Uw geboortedatum: </label>
+        <input type="date" id="geboortedatum">
+    </form>
+  <br>
+  <br>
+    <form>
+        <label for="email">Uw emailadres: </label>
+        <input type="email">
+    </form>
+  <br>
+  <br>
+    <form>
+        <label for="arts">Uw arts: </label>
+            <select name="arts" id="arts">
+                <option value="Arie">dokter Arie</option>
+                <option value="Bert">dokter Bert</option>
+                <option value="Cas">dokter Cas</option>
+                <option value="Doris">dokter Doris</option>
+                <option value="Eloise">dokter Eloise</option>
+            </select> 
+    </form>
+    <br>
+    <br>
+    <form>
+        <label for="klacht">Uw klacht: </label>
+            <select name="klacht" id="klacht">
+                <option value="psychisch">psychisch</option>
+                <option value="buikpijn">buikpijn</option>
+                <option value="verkouden">verkouden</option>
+                <option value="griep">griep</option>
+               <option value="jeuk">jeuk</option>
+            </select>  
+    </form> 
+    <br>
+    <br>
+    <form>
+         <label for="tijdstip">Voorkeurstijdstip vandaag: </label>
+        <input type="time">
+    </form>
+    <br>
+    <br>
+    <form>
+        <input type="submit">
+        <form action="/contact" method="POST">
+    </form>
+</body>
+</html>
