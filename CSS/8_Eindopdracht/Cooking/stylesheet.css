@@ -1,0 +1,148 @@
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  nav justify-content;
+  }
+
+    body { 
+      font-family: 'Lobster';
+      font-style: italic;
+      background-color: gray;
+      color: black
+    }
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: fit-content;
+        margin: 10px;
+        background-color:rgb(128, 179, 128);
+        color:rgb(97, 135, 216);
+        text-align: left;
+    }
+
+    .flexcontainer {
+        width: 100%;
+        margin: 0px;
+
+    }
+    .flexcontainer .column1 {
+        float: left;
+        flex: 1;
+        padding-left: 200px;
+    }
+
+    .flexcontainer .column2 {
+        float: right;
+        flex: 1;
+        padding-right: 200px;
+    }
+
+    .flexcontainer .pasta{
+        display: flex; 
+        flex: 1; 
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        margin: 20px;
+    }
+  nav {
+      width: 100%;
+      background-color: lightgray;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      box-sizing: border-box;
+      overflow: hidden;
+  }
+
+
+
+ .p1 {
+    font-size: 20px;
+    width: 300px;
+
+}
+
+.p2 {
+    font-size: 20px;
+    width: 200px;
+
+}
+ h1 {
+    font-size: 50px;
+ }
+
+ h2 {
+     font-size: 20px;
+ }
+ .image2 {
+    width: 100px;
+    height: 100px;
+    disp
+ }
+ .largepicture {
+     width: 100%;
+     height: auto;
+     opacity: -2;
+ }
+  .btn1 {
+      background-color: black;
+      color: rgb(128, 179, 128);
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition: 0.3 s;
+        }
+
+  .btn1:hover {
+      background-color: rgb(97, 135, 216);
+      color: rgb(128, 179, 128);
+  }
+
+  .btn2 {
+    background-color: black;
+    color: rgb(128, 179, 128);
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3 s;
+}
+  .btn2:hover {
+    background-color: rgb(97, 135, 216);
+    color:rgb(128, 179, 128);
+
+}
+.divpop {
+    display: flexbox;
+
+}
+.pasta {
+
+}
+
+.kopgerechten {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+ul.1 {
+
+}
+
+li a {
+    display: inline;
+    float: right;
+    justify-content: space-evenly;
+    
+}
+
+li b {
+    float: left;
+    padding: 14px 16px;
+}

@@ -1,0 +1,9 @@
+li {
+    display: inline;
+    float: right;
+  }
+  ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }

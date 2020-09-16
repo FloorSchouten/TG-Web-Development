@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .flex-container >div {
+            flex-direction: row;
+            justify-content: left;
+        }
+        .flex-container2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        .flex-container2 >div {
+            flex-direction: row;
+         }
+         .flex-container3 {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+        }
+        .flex-container3 >div {
+
+            justify-content: space-around;
+            flex-direction: row;
+         }
+
+    </style>
+</head>
+<body>
+    <h1>Links onder elkaar bovenaan pagina</h1>
+    <div class="flex-container">
+        <p>b</p>
+        <p>a</p>
+        <p>l</p>
+
+    </div>
+    
+    <h1>Rechts naast elkaar rechts op pagina</h1>
+    <div class="flex-container2">
+        <p>b</p>
+        <p>a</p>
+        <p>l</p>
+
+    </div>
+    <h1>Midden naast elkaar omgekeerde volgorde</h1>
+    <div class="flex-container3">
+        <p>b</p>
+        <p>a</p>
+        <p>l</p>
+
+    </div>
+</body>
+</html>

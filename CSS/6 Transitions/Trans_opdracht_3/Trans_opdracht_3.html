@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 800px;
+            border: 1px solid black;
+            
+        }
+        .container:hover .blok {
+            margin-left: 500px;
+        }
+
+        .container:hover .blok:nth-child(1) {
+            border-radius: 50%;
+        }
+        .blok {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            border-radius: 0px;
+            border-style: solid, 1px;
+            margin: 5px;
+            left: 0px;
+            transition: margin-left 3s linear;
+            border-radius 1s linear;
+            border: solid 1px black;
+
+
+        } 
+        .blok:nth-child(1): {
+
+            background-color: red;
+        }
+
+        .blok:nth-child(2): {
+
+        background-color: green;
+        transition-timing-function: ease;
+        }  
+
+        .blok:nth-child(3): {
+
+        background-color: yellow;
+        transition-timing-function:ease-in-out;
+        }  
+
+        .blok:nth-child(4): {
+
+        background-color: red;
+        }
+        .blok:nth-child(5): {
+
+        background-color: red;
+        transition-timing-function:
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="blok">1</div>
+        <div class="blok">2</div>
+        <div class="blok">3</div>
+        <div class="blok">4</div>
+        <div class="blok">5</div>
+    </div>
+    
+</body>
+</html>
