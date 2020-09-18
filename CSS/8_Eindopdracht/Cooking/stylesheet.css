@@ -1,22 +1,59 @@
-
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  nav justify-content;
+* {
+    margin: 0;
+    padding: 0;
   }
 
     body { 
-      font-family: 'Lobster';
-      font-style: italic;
-      background-color: gray;
+      font-family: 'Lobster' italic;
+      background-color: lightgray;
       color: black
     }
+ /* NAVIGATIE-BAR */
 
+    .nav {
+        width: 100%;
+        height: 40px;
+        background-color: lightgray;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        box-sizing: border-box;
+        overflow: hidden;
+        float: right;
+        
+    }
+
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden
+    background-color gray;
+
+    }
+    .li1 {
+    display: inline;
+    justify-content: space-around;
+    align-items: flex-end;
+    }
+
+    li a {
+        display: inline;
+        float: right;
+        justify-content: space-evenly;
+        color: black;
+        
+    }
+
+  /* FOOTER */
     .footer {
         position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
         height: fit-content;
-        margin: 10px;
+        margin: 0px;
         background-color:rgb(128, 179, 128);
         color:rgb(97, 135, 216);
         text-align: left;
@@ -25,8 +62,8 @@
     .flexcontainer {
         width: 100%;
         margin: 0px;
-
     }
+
     .flexcontainer .column1 {
         float: left;
         flex: 1;
@@ -39,6 +76,82 @@
         padding-right: 200px;
     }
 
+ /* HOME FOTO MET KOP, PARAGRAAF EN BUTTONS */
+    .home {
+        width: 100%;
+        height: 400px;
+        padding-top: 10px;
+        padding-right: 200px;
+        padding-left: 400px;
+        position: relative; 
+        justify-content: flex-end;
+        margin-bottom: 10px;       
+    }
+
+    .home::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        max-width: 100%;
+        height: auto;
+        background-image: url(/CSS/8_Eindopdracht/cooking.jpg);
+        background-size: cover;
+        opacity: 0.8;
+        z-index: -1;
+    }   
+    .p1 {
+        font-size: 20px;
+        color: rgb(97, 135, 216);
+        width: 300px;
+        height: 100px;
+    
+    }
+    .buttons {
+        text-align: center;
+        position: absolute;
+    }
+    
+    .btn1 {
+        background-color: black;
+        color: rgb(128, 179, 128);
+        padding: 10px 10px;
+        font-size: 14px;
+        margin-top: 12px;
+        margin-right: 9px;
+        transition: 0.3 s;
+        position: relative;
+    }
+       
+    .btn1:hover {
+        background-color: rgb(97, 135, 216);
+        color: rgb(128, 179, 128);
+    }
+       
+    .btn2 {
+        background-color: black;
+        color: rgb(128, 179, 128);
+        padding: 10px 10px;
+        font-size: 3pv;
+        margin: 4px 2px;
+        transition: 0.3 s;
+        position: relative;     
+    }
+    .btn2:hover {
+        background-color: rgb(97, 135, 216);
+        color:rgb(128, 179, 128);
+    }    
+    section + h1 {
+            color:black;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 40px;
+    }
+
+  /* POPULAIRE GERECHTEN */  
     .flexcontainer .pasta{
         display: flex; 
         flex: 1; 
@@ -46,103 +159,85 @@
         flex-wrap: wrap; 
         margin: 20px;
     }
-  nav {
-      width: 100%;
-      background-color: lightgray;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: center;
-      box-sizing: border-box;
-      overflow: hidden;
-  }
+    .prijs {
+        margin: 7px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .divpop {
+        margin-top: 40px;
+        width: 300px;
+      }
 
 
-
- .p1 {
-    font-size: 20px;
-    width: 300px;
-
-}
 
 .p2 {
-    font-size: 20px;
+    font-size: 2vw;
     width: 200px;
 
 }
  h1 {
-    font-size: 50px;
+    font-size: 40px;
+    ;
+ }
+ span {
+    color: rgb(97, 135, 216)
  }
 
  h2 {
-     font-size: 20px;
+     font-size: 2vw;
  }
- .image2 {
-    width: 100px;
-    height: 100px;
-    disp
- }
- .largepicture {
-     width: 100%;
-     height: auto;
-     opacity: -2;
- }
-  .btn1 {
-      background-color: black;
-      color: rgb(128, 179, 128);
-      padding: 10px 20px;
-      font-size: 16px;
-      margin: 4px 2px;
-      transition: 0.3 s;
-        }
-
-  .btn1:hover {
-      background-color: rgb(97, 135, 216);
-      color: rgb(128, 179, 128);
-  }
-
-  .btn2 {
-    background-color: black;
-    color: rgb(128, 179, 128);
-    padding: 10px 20px;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition: 0.3 s;
-}
-  .btn2:hover {
-    background-color: rgb(97, 135, 216);
-    color:rgb(128, 179, 128);
-
-}
-.divpop {
-    display: flexbox;
-
-}
-.pasta {
-
-}
-
-.kopgerechten {
+ .gerechten {
+    display: flex;
     text-align: center;
+    text-transform: capitalize;
+    height: auto;
+    justify-content: space-around;
+    padding-bottom: 25px;
+
+ }
+ .divpop {
+    margin-top: 40px;
+    width: 300px;
 }
-
-ul {
-    list-style-type: none;
-
-}
-
-ul.1 {
-
-}
-
-li a {
+.headerpasta {
     display: inline;
-    float: right;
-    justify-content: space-evenly;
-    
 }
+.image1 {
+  
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+ }
+.pasta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+ 
+
+width: 100%;
+height: auto;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+
+
 
 li b {
     float: left;
     padding: 14px 16px;
+    color: black;
 }
+   /* MEDIA QUERIES */
+   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    nav justify-content;
+    }
+    .banner {
+        margin: 80px; auto;
+
+    }
