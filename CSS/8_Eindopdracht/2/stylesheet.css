@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    
+  }
+  .flex-container{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    font-size: smaller;
+  }
+  .flex-container .column1{
+    display: flex;
+    
+    
+  }
+  .flex-container .column2{
+   display: flex;
+
+  }
+  /* Menu*/
+  .menu {
+    display: block;
+    background-color: #4B86CB;
+    color: white;
+    margin: 0px;
+    padding-left: 0px;
+    padding-top: 20px;
+    width: 200px;
+    text-align: left;
+    height: 1000px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 40px;
+    padding-top: 20px;
+    width: 130px;
+    overflow: auto;
+  }
+
+ 
+  /* Members additional information*/
+  .membersinfo .h1{
+    display: flex;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+  }
+  th, td {
+    padding: 10px;
+  }
+  tr:nth-child(even) {
+    background-color: #4B86CB;
+  }
+  table {
+    
+  }
+  tr {
+    width: 33%;
+  }
+  /* Additional information*/
+  .form-inline {  
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: ;
+  }
+
+  
+  .form-inline label {
+    margin: 5px 10px 5px 0;
+    ;
+  }
+  
+  .form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #C5DEEA;
+    border: 1px solid #ddd;
+  }
+  
+
+ 
+  @media (max-width: 800px) {
+    .form-inline input {
+      margin: 10px 0;
+    }
+    
+    .form-inline {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }

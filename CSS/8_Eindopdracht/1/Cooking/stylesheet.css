@@ -159,6 +159,15 @@
         flex-wrap: wrap; 
         margin: 20px;
     }
+    .gerechten {
+        display: flex;
+        text-align: center;
+        text-transform: capitalize;
+        height: auto;
+        justify-content: space-around;
+        padding-bottom: 25px;
+    
+     }
     .prijs {
         margin: 7px 0px;
         display: flex;
@@ -188,15 +197,7 @@
  h2 {
      font-size: 2vw;
  }
- .gerechten {
-    display: flex;
-    text-align: center;
-    text-transform: capitalize;
-    height: auto;
-    justify-content: space-around;
-    padding-bottom: 25px;
 
- }
  .divpop {
     margin-top: 40px;
     width: 300px;
@@ -208,6 +209,7 @@
   
     height: 200px;
     width: 200px;
+    margin: 30px;
     border-radius: 50%;
  }
 .pasta {
