@@ -1,0 +1,40 @@
+// @import "./colors";
+
+@mixin button {
+    display: inline-block;
+    padding: 40px 40px;
+    text-align: center;
+    font-size: large;
+    border-radius: 50%;
+    background-color: yellow;
+    color: green;
+}
+// .button {
+// @include button;
+// }
+
+@mixin hover {
+    background-color: blue;
+    color:red;
+    transition: 3s;
+}
+
+.button {
+    @include button;
+
+    &:hover {
+        @include hover;
+    }
+}
+
+// @mixin button-hover {
+//     background-color: $button-hover-color;
+// //     color: $secondary-color;
+
+//         .button {
+//         @include button-shape;
+//         }
+
+//         &:hover {
+//         @include button-hover;
+//         }

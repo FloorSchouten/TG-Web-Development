@@ -1,0 +1,22 @@
+@import "./colors";
+
+
+.button {
+    background-color: $button-color;
+    border: 5px solid $secundary-color;
+    border-radius: 10%;
+    padding: 30px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+
+&:hover {
+    background-color: $button-hover-color;
+    border: 5px solid $secundary-color;
+    border-radius: 10%;
+    padding: 30px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+  }
+}

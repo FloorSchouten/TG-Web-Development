@@ -1,0 +1,18 @@
+.profile-pic {
+  float: left;
+  width: 250px;
+}
+
+@media screen and (max-width: 320px) {
+  .profile-pic {
+    width: 100px;
+    float: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .profile-pic {
+    float: right;
+  }
+}
+/*# sourceMappingURL=main.css.map */

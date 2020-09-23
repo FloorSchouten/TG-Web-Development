@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACGA,AAAA,OAAO,CAAC;EACJ,gBAAgB,ECFL,MAAM;EDGjB,MAAM,EAAE,GAAG,CAAC,KAAK,CCJH,IAAI;EDKlB,aAAa,EAAE,GAAG;EAClB,OAAO,EAAE,SAAS;EAClB,UAAU,EAAE,MAAM;EAClB,OAAO,EAAE,YAAY;EACrB,SAAS,EAAE,IAAI;CAWlB;;AAlBD,AASA,OATO,AASN,MAAM,CAAC;EACJ,gBAAgB,ECVC,MAAM;EDWvB,MAAM,EAAE,GAAG,CAAC,KAAK,CCbH,IAAI;EDclB,aAAa,EAAE,GAAG;EAClB,OAAO,EAAE,SAAS;EAClB,UAAU,EAAE,MAAM;EAClB,OAAO,EAAE,YAAY;EACrB,SAAS,EAAE,IAAI;CAChB",
+    "sources": [
+        "partial.scss",
+        "assets/_button.scss",
+        "assets/_colors.scss"
+    ],
+    "names": [],
+    "file": "partial.css"
+}

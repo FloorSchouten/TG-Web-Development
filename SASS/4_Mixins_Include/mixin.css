@@ -1,0 +1,16 @@
+.button {
+  display: inline-block;
+  padding: 40px 40px;
+  text-align: center;
+  font-size: large;
+  border-radius: 50%;
+  background-color: yellow;
+  color: green;
+}
+
+.button:hover {
+  background-color: blue;
+  color: red;
+  transition: 3s;
+}
+/*# sourceMappingURL=mixin.css.map */

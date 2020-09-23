@@ -1,0 +1,23 @@
+wanneer gebruik je inheritance, wanneer mixins?
+
+Like extend using placeholders, the error mixin isn’t included in the compiled version. 
+Unlike extend though, notice how the declarations in the error mixin are repeated multiple times 
+in the compiled version? Sheesh. That’s maybe not good?
+Then again, this is not exactly what mixins were intended for.
+ The true magic in mixins arise from the fact that you can pass in arguments, just like a function call. For our error mixin, we can provide different background colors for different type of errors:
+Generally, if you don’t have dynamic styles, using @extend (preferably using placeholders 
+— unless you are referencing the class in the DOM) is good enough. Using mixins for static-only 
+styles causes unnecessarily bloated stylesheets so it’s a good idea to keep the declarations 
+minimal and only for dynamic declarations because it’s going to be duplicated.
+A mixin is typically used with multiple inheritance. So, in that sense, there's "no difference".
+
+The detail is that a mixin is rarely useful as a standalone object.
+
+For example, say you have a mixin named "ColorAndDimension", which adds a color property and 
+width and height.
+
+Now, you could add ColorAndDimension to a, say, Shape class, a Sprite class, a Car class, etc. 
+And they will all have the same interface (say get/setColor, get/setHeight/Width, etc.)
+
+So, in the generic case a mixin IS inheritance. But you can argue it's a matter of the role of 
+the class in the overall domain as to whether a mixin is a "primary" class or simply a mixin.
