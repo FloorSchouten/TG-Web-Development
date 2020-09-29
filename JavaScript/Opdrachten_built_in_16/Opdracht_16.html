@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <p>Opdracht: Maak een eigen voorbeeld van de volgende functies en licht toe wat de functie doet in het
+    blok:
+    1. charAt(): The charAt() method returns de letter/nummer op de gespecificeerde plek in een string. 
+        In het voorbeeld dus F
+            const name = 'Floor';
+            const index = (0);
+            
+            console.log(`The character at index ${index} is ${name.charAt(index)}`);
+    2. concat(): concatenates the string arguments to the calling string and returns a new string.
+            maar het wordt sterk aangeraden om de assignment operators (+, +=) te gebruiken
+            const str1 = 'Lief zeg';
+            const str2 = 'Puppy';
+            
+            console.log(str1.concat(' ', str2));
+            // expected output: "Lief zeg Puppy"
+            
+            console.log(str2.concat(', ', str1));
+            // expected output: "Puppy, Lief zeg"
+            
+    3. slice()extracts a section of a string and returns it as a new string, 
+        without modifying the original string. 
+        1 nummer tussen haakjes selecteert gedeelte na dit aantal letters
+        2 nummers tussen haakjes selecteert gedeelte tussen deze letters
+        - nummer tussen haakjes selecteert gedeelte (woord) tot eind
+        - nummers tussen haakjes selecteert gedeelte (woord) vanaf eindpositie
+
+            const str = 'Techgrounds bevindt zich in Osdorp';
+
+            console.log(str.slice(12));
+            // expected output: "bevindt zich in Osdorp."
+            
+            console.log(str.slice(12, 20));
+            // expected output: "bevindt"
+            
+            console.log(str.slice(-6));
+            // expected output: "Osdorp"
+            
+            console.log(str.slice(-10, -7));
+            // expected output: "in"
+
+    4. split()method divides a String into an ordered list of substrings, puts these substrings into an array, 
+    and returns the array. The division is done by searching for a pattern; where the pattern is provided as 
+    the first param. 
+    str.split('') en dan words[] geeft vanaf 0 woord aan in de string. Dus [3] is het vierde woord.
+    str.split('') en dan chars[] geeft karakters aan in de string. Dus [8] is het 8e karakter.
+            const str = 'Techgrounds bevindt zich in Osdorp';
+
+            const words = str.split(' ');
+            console.log(words[3]);
+            // expected output: "in"
+            
+            const chars = str.split('');
+            console.log(chars[8]);
+            // expected output: "n"
+ 
+
+    5. substr()method returns a portion of the string, starting at the specified index and 
+    extending for a given number of characters afterwards.
+    (3, 2) geeft de derde letter vanaf 0, en de twee letters die vanaf de derde letter staan. 
+        Bij het woord Techgrounds is dat h, en dan de h en g als twee letters die op de derde letter volgende
+    (4) geeft de substring aan met de letters vanaf de vierde letter   
+
+<script>
+const str = 'Techgrounds';
+
+console.log(str.substr(3, 2));
+// expected output: "hg"
+
+console.log(str.substr(4));
+// expected output: "grounds"
+
+
+</script>
+
+
+</body>
+</html>
+
