@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <h1>Translate months</h1>
+   <input type="number" name="number" id="number">
+   <button onclick="translateMonth()">translate</button>
+   <div id="translatedMonth">   </div>
+ 
+   <script>
+       
+        switch (number ().getMonth()) {
+           case 0:
+           month = "January";
+           break;
+           case 1:
+           month = "February";
+           break; 
+           case 2:
+           month = "March";
+           break;
+           case 3:
+           month = "April";
+           break;
+           case 4:
+           month = "May";
+           break;
+           case 5:
+           month = "June";
+           break;
+           case 6:
+           month = "July";
+           break;
+           case 7:
+           month = "August";
+           case 8:
+           month = "September";
+           case 9: 
+           month = "October";
+           case 10: 
+           month = "November";
+           break;
+           case 11: 
+           month = "December";
+
+//
+		// Hier kun je starten met coderen.
+ 
+       }
+       document.getElementById("translatedMonth").innerHTML = text;
+   </script>
+</body>
+</html>

@@ -1,26 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-<p>Als je het opent in de console, dan staat er textanother text</p>
-<p>Je kunt hetzelfde resultaat krijgen als je dit schrijft: 
-    let text = "text";
-    let text2 = "another text";
-    console.log(text + text2)
-</p>
-
+<!DOCTYPE html >
+<html lang = "en" >
+<head >
+<meta charset = "UTF-8" >
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0" >
+<title > Document </title >
+<style >
+.words button {
+position : relative ;
+border : 1px solid black ;
+border-radius : .5em ;
+background-color : white ;
+padding : .5em ;
+cursor : pointer ;
+transition : background-color .3s ease-in-out ;
+z-index : 1 ;
+}
+.words button:focus {
+outline : none ;
+background-color : grey ;
+}
+.words .fg {
+position : absolute ;
+content : '' ;
+display : flex ;
+justify-content : center ;
+align-items : center ;
+top : 0 ;
+left : 0 ;
+width : 100% ;
+height : 100% ;
+border-radius : inherit ;
+background-color : white ;
+z-index : 2 ;
+transition : width .3s ease-out ;
+overflow : hidden ;
+}
+.words button:hover .fg {
+width : 0 ;
+z-index : 1 ;
+}
+.words button:focus .fg {
+width : 0 ;
+}
+.answer {
+font-size : 2em ;
+font-weight : 900 ;
+}
+</style >
+</head >
+<body >
+<h1 > Guess the word </h1 >
+<section >
+<div class = "words" >
+<button onclick = " guess ( this )" ><div
+class = "fg" > Show </div>< span > Together </span ></button >
+<button onclick = " guess ( this )" >< div
+class = "fg" > Show </ div >< span > Teamwork </span ></button >
+< button onclick = " guess ( this )" >< div class = "fg" > Show </div ><span > Scrum </ span ></ button >
+< button onclick = " guess ( this )" >< div
+class = "fg" > Show </div ><span > Individual </ span ></ button >
+< button onclick = " guess ( this )" >< div
+class = "fg" > Show </div ><span > Moments </ span ></ button >
+<button onclick = " guess ( this )" >< div class = "fg" > Show </ div >< span > Like </ span ></ button >
+<button onclick = " guess ( this )" >< div class = "fg" > Show </ div >< span > Dislike </ span ></ button >
+<button onclick = " guess ( this )" >< div class = "fg" > Show </ div >< span > Money </ span ></ button >
+<button onclick = " guess ( this )" >< div
+class = "fg" > Show </div ><span > Important </ span ></ button >
+</ div >
+</section >
+<div >
+<span > The number of wrong guessing: <span id = "count" > 0 </ span ></ span >
+<p id = "label"></p>
+</div>
 <script>
-let text = "text" ;
-text += "another text";
-console.log(text);
-
-</script>
-
-
-</body>
-</html>
+const words = ["Together" , "Teamwork" , "Scrum" , "Individual" , "Moments" , "Like" , "Dislike" ,
+"Money" , "Important" ];
+const guessingWord = words [Math.round (Math.random () * 8 )];
+function guess (obj) {
+}
+</script >
+</body >
+</html >
