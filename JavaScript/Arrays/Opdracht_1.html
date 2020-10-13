@@ -15,12 +15,12 @@
         //Opdracht_1//
         //Maak een array met 10 getallen die willekeurig in de array staan. Print de array uit op je console//
         let number = [1,4,5,8,6,2,3,9,7,10];
-        console.log(number);
+        //console.log(number);
 
         //Opdracht_2//
         //Maak een array met 5 verschillende fruitsoorten, print uit in console.//
         let fruit = ["aardbei", "appel", "kiwi", "banaan", "druif"];   
-        console.log(fruit);
+        //console.log(fruit);
 
         //Opdracht_3//
         //Op welke index staat Appel. print uit op de console.//
@@ -32,10 +32,60 @@
 
         //Opdracht_5//
         //Gebruik de math.random() methode om te bepalen welke waarde er uit de eerste array wordt gehaald//
-        let number = [1,4,5,8,6,2,3,9,7,10];
-        let fruit = ["aardbei", "appel", "kiwi", "banaan", "druif"];   
-        math.random
+        let number1 = [1, 4, 5, 8, 6, 2, 3, 9, 7, 10];
+        let fruit2 = ["aardbei", "appel", "kiwi", "banaan", "druif"];   
+        let waardeNumber1 = number1[Math.floor(Math.random()* 10)];
+        let fruitChoice = fruit2[waardeNumber1 % 5];
 
+        console.log(fruitChoice);   
+
+        //Opdracht_6//
+        //.shift haalt de eerste uit een array er uit
+        let fruit3 = ["Banana", "Orange", "Apple", "Mango"];
+        let fruitEraf = fruit3.shift();
+
+        console.log(fruit3);
+        console.log(fruitEraf);
+
+        //.push toevoegen item op laatste plek in array, returns 5 fruitsoorten incl ananas
+        let fruitEraf = fruit3.push("Ananas");
+
+        //.pop toevoegen: schrappen van laatste item in array
+        letfruitEraf = fruit3.pop(); // returns "Mango"
+
+        //.slice toevoegen: selecteren gedeelte, vanaf tot (0, 2 geeft dus op 
+        //positie 0 en 1, deze geeft dus banana en orange)
+        let babyHap = fruit3.slice(0, 2); 
+
+        //.splice toevoegen: The splice() method adds/removes 
+        //items to/from an array, and returns the removed 
+        //item(s). Dit voorbeeld geeft na de eerste 3 items bes en braam, dan het laatste item
+        let fruit3 = ["Banana", "Orange", "Apple", "Mango"];
+        fruit3.splice(3, 0, "bes", "braam"); 
+        console.log (fruit3);
+
+        //.sort toevoegen: dan sorteer je het op alfabetische of numerische volgorde
+        let fruit3 = ["Banana", "Orange", "Apple", "Mango"];
+        fruit3.sort();
+        console.log(fruit3)
+
+        //Opdracht_7: print uit 4, dus correct
+        let fruit = ["Banana", "Orange", "Apple", "Mango"];
+        fruit.length;
+        console.log (fruit.length);
+
+        //Opdracht_8: aanpassen values, hoe? Verander Orange naar Pear
+        let fruit = ["Banana", "Orange", "Apple", "Mango"];
+        fruit[1] = "Pear";
+        console.log (fruit);
+
+        //Opdracht_9: wissel eerste twee fruitsoorten
+        let fruit = ["Mandarijn", "Aardbei", "Appel", "Mango"];
+        let temp = fruit[1];
+        fruit[1] = fruit[0];
+        fruit[0] = temp;
+
+        console.log (fruit);
     </script>
 </body>
 </html>
