@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="clubs" class="clubs"></div>
+ 
+    <script>
+     // start assignments
+     function contactgegevens(adres, telefoon, contactpersoon) {
+         this.adres = adres;
+         this.telefoon = telefoon;
+         this.contactpersoon = contactpersoon;
+     }
+     function clubs (nclub, tsport, nmemb, contactgeg) {
+         this.nameClub = nclub;
+         this.typeSport = tsport;
+         this.numberMembers = nmemb; 
+         this.contactInfo = contactgeg;
+     }
+    
+    let ContactGegevens = new contactgegevens ("Meer en Vaart", "020-77777777", "Jens");
+    let myMember = new clubs ("AZ", "voetbal", "1000", ContactGegevens);
+    console.log(myMember.contactInfo.adres + " op " + myMember.contactInfo.telefoon + " met " + myMember.contactInfo.contactpersoon);
+    console.log(myMember.nameClub + " biedt " + myMember.typeSport + " voor " + myMember.numberMembers + " kanjers");
+    </script>
+</body>
+</html>
