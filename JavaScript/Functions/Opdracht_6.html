@@ -6,41 +6,22 @@
     <title>Document</title>
 </head>
 <body>
+   
+
     <script>
-    
-    //let gastNaam = prompt("Hoe heet je?");
+        const namenLijst = ["John", "Olly", "Mo", "Hendrik", "Tony", "Irus", "Jan", "Peter"];
+        randomName =() => namenLijst[Math.round(Math.random() * 7)];
+        
+        naamBekend =(namenLijst.includes(gastNaam) => {
+        let randomPerson = randomName();
+        console.log(randomName);
 
-    //if (namenLijst.includes(gastNaam)) {
-    //   alert("Dit is een bekende van ons");
-    // } else {
-    //   alert("Onbekend in ons systeem!");
-    //}
-    function selectNaam () {
-        let namen = ["John", "Olly", "Mo", "Hendrik", "Tony"];
-        let randomName = namen[Math.floor(Math.random()*namen.length)];
-        return randomName;
-          
-          }
-
-          selectNaam = randomName => namen[Math.floor(Math.random()*namen.length)];
-          
-          
-          let namenLijst = ["John", "Olly", "Mo", "Hendrik", "Tony"];
-          // let gastNaam = prompt("Hoe heet je?");
-
-          // if (namenLijst.includes(gastNaam)) {
-          //   alert("Dit is een bekende van ons");
-          // } else {
-          //   alert("Onbekend in ons systeem!");
-          // }
-    
-
-          function selectNaam () {
-          return Math.floor(Math.random() * namenLijst.length);
-          
-          }
-
-
+        if (namenLijst.includes(gastNaam)) {
+             alert("Dit is een bekende van ons");
+           } else {
+             alert("Onbekend in ons systeem!");
+           }
+        };
     </script>
 
 </body>
