@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: 'Times New Roman', Times, serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Applicatie cijfers leerlingen</h2>
+
+<h3>Wiskunde</h3>
+<div></div>
+<table>
+  <tr>
+    <th>Naam</th>
+    <th>Cijfer</th>
+
+  </tr>
+  <tr>
+    <td>Willem</td>
+    <td><input
+        type="text"
+        class="grades wisCijfer"
+        oninput="check(this)"
+        value="3"
+      />
+    </td>
+
+  </tr>
+  <tr>
+    <td>Jan</td>
+    <td><input
+        type="text"
+        class="grades wisCijfer"
+        oninput="check(this)"
+        value="7"
+      />
+    </td>
+
+  </tr>
+  <tr>
+    <td>Kim Sing</td>
+    <td><input
+        type="text"
+        class="grades wisCijfer"
+        oninput="check(this)"
+        value="10"
+      />
+    </td>
+
+  </tr>
+  <tr>
+    <td>Samantha</td>
+    <td><input
+        type="text"
+        class="grades wisCijfer"
+        oninput="check(this)"
+        value="4"
+      />
+    </td>
+
+  </tr>
+  <tr>
+    <td>Joyce</td>
+    <td><input
+        type="text"
+        class="grades wisCijfer"
+        oninput="check(this)"
+        value="5.5"
+      />
+    </td>
+
+  </tr>
+  <tr>
+    <td>Gareth</td>
+    <td><input
+        type="text"
+        class="grades wisCijfer"
+        oninput="check(this)"
+        value="1"
+      />
+    </td>
+  
+  </tr>
+</table>
+
+  
+  <h3>Natuurkunde</h3>
+  <div></div>
+  <table>
+    <tr>
+      <th>Naam</th>
+      <th>Cijfer</th>
+  
+    </tr>
+    <tr>
+      <td>Willem</td>
+      <td><input
+          type="text"
+          class="grades natCijfer"
+          oninput="check(this)"
+          value="7"
+        />
+      </td>
+  
+    </tr>
+    <tr>
+      <td>Jan</td>
+      <td><input
+          type="text"
+          class="grades natCijfer"
+          oninput="check(this)"
+          value="5"
+        />
+      </td>
+  
+    </tr>
+    <tr>
+      <td>Kim Sing</td>
+      <td><input
+          type="text"
+          class="grades natCijfer"
+          oninput="check(this)"
+          value="8"
+        />
+      </td>
+  
+    </tr>
+    <tr>
+      <td>Samantha</td>
+      <td><input
+          type="text"
+          class="grades natCijfer"
+          oninput="check(this)"
+          value="6"
+        />
+      </td>
+  
+    </tr>
+    <tr>
+      <td>Joyce</td>
+      <td><input
+          type="text"
+          class="grades natCijfer"
+          oninput="check(this)"
+          value="9"
+        />
+      </td>
+  
+    </tr>
+    <tr>
+      <td>Gareth</td>
+      <td><input
+          type="text"
+          class="grades natCijfer"
+          oninput="check(this)"
+          value="5.5"
+        />
+      </td>
+    
+    </tr>
+  </table>
+</table>
+
+  
+<h3>Nederlands</h3>
+<div></div>
+<table>
+  <tr>
+    <th>Naam</th>
+    <th>Cijfer</th>
+
+  </tr>
+  <tr>
+    <td>Willem</td>
+    <td><input
+        type="text"
+        class="grades nedCijfer"
+        oninput="check(this)"
+        value="7"
+      />
+    </td>
+
+  </tr>
+  <tr>
+    <td>Jan</td>
+    <td><input
+        type="text"
+        class="grades nedCijfer"
+        oninput="check(this)"
+        value="7"
+      />
+    </td>
+
+  </tr>
+  <tr>
+    <td>Kim Sing</td>
+    <td><input
+        type="text"
+        class="grades nedCijfer"
+        oninput="check(this)"
+        value="4"
+      />
+    </td>
+
+  </tr>
+  <tr>
+    <td>Samantha</td>
+    <td><input
+        type="text"
+        class="grades nedCijfer"
+        oninput="check(this)"
+        value="8"
+      />
+    </td>
+
+  </tr>
+  <tr>
+    <td>Joyce</td>
+    <td><input
+        type="text"
+        class="grades nedCijfer"
+        oninput="check(this)"
+        value="8.5"
+      />
+    </td>
+
+  </tr>
+  <tr>
+    <td>Gareth</td>
+    <td><input
+        type="text"
+        class="grades nedCijfer"
+        oninput="check(this)"
+        value="4"
+      />
+    </td>
+  
+  </tr>
+</table>
+
+</table>
+
+  
+<h3>Engels</h3>
+<div></div>
+<table>
+  <tr>
+    <th>Naam</th>
+    <th>Cijfer</th>
+
+  </tr>
+  <tr>
+    <td>Willem</td>
+    <td><input
+        type="text"
+        class="grades natCijfer"
+        oninput="check(this)"
+        value="6"
+      />
+    </td>
+
+  </tr>
+  <tr>
+    <td>Jan</td>
+    <td><input
+        type="text"
+        class="grades natCijfer"
+        oninput="check(this)"
+        value="6"
+      />
+    </td>
+
+  </tr>
+  <tr>
+    <td>Kim Sing</td>
+    <td><input
+        type="text"
+        class="grades natCijfer"
+        oninput="check(this)"
+        value="5.5"
+      />
+    </td>
+
+  </tr>
+  <tr>
+    <td>Samantha</td>
+    <td><input
+        type="text"
+        class="grades natCijfer"
+        oninput="check(this)"
+        value="4.5"
+      />
+    </td>
+
+  </tr>
+  <tr>
+    <td>Joyce</td>
+    <td><input
+        type="text"
+        class="grades natCijfer"
+        oninput="check(this)"
+        value="5.5"
+      />
+    </td>
+
+  </tr>
+  <tr>
+    <td>Gareth</td>
+    <td><input
+        type="text"
+        class="grades natCijfer"
+        oninput="check(this)"
+        value="8"
+      />
+    </td>
+  
+  </tr>
+</table>
+
+</table>
+
+  
+<h3>Engels</h3>
+<div></div>
+<table>
+  <tr>
+    <th>Naam</th>
+    <th>Cijfer</th>
+
+  </tr>
+  <tr>
+    <td>Willem</td>
+    <td><input
+        type="text"
+        class="grades natCijfer"
+        oninput="check(this)"
+        value="6"
+      />
+    </td>
+
+  </tr>
+  <tr>
+    <td>Jan</td>
+    <td><input
+        type="text"
+        class="grades natCijfer"
+        oninput="check(this)"
+        value="6"
+      />
+    </td>
+
+  </tr>
+  <tr>
+    <td>Kim Sing</td>
+    <td><input
+        type="text"
+        class="grades natCijfer"
+        oninput="check(this)"
+        value="5.5"
+      />
+    </td>
+
+  </tr>
+  <tr>
+    <td>Samantha</td>
+    <td><input
+        type="text"
+        class="grades natCijfer"
+        oninput="check(this)"
+        value="4.5"
+      />
+    </td>
+
+  </tr>
+  <tr>
+    <td>Joyce</td>
+    <td><input
+        type="text"
+        class="grades natCijfer"
+        oninput="check(this)"
+        value="5.5"
+      />
+    </td>
+
+  </tr>
+  <tr>
+    <td>Gareth</td>
+    <td><input
+        type="text"
+        class="grades natCijfer"
+        oninput="check(this)"
+        value="8"
+      />
+    </td>
+  
+  </tr>
+</table>
+</body>
+</html>
+</body>
+</html>

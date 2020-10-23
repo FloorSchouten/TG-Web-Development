@@ -6,15 +6,30 @@
     <title>Document</title>
 </head>
 <body>
+
+    <h3>
+        Opdracht 7: <br />
+        Hoe geef je 2 of meer parameters mee aan een functie? Geef een voorbeeld.
+        <br />
+        Wat zijn rest parameters? Geef een voorbeeld. <br />
+        Wat is het verschil tussen rest parameters en expliciete parameters die je
+        aangeeft bij een functie?
+      </h3>
+    <p>
+        parameters kun je als volgt weergeven in een functie: <br />
+        <code> let sum = (a,b) => a + b ;</code>
+        <p>rest-parameters zijn parameters die je geen naam hebt gegeven.</p>
+        <p>Drie verschillen tussen rest parameters en expliciete parameters:</p>
+            <ul>
+            <li>rest parameters krijgen als enige geen aparte naam 
+                (i.e. formeel gedefinieerd in functie), terwijl het arguments object alle arguments bevat 
+                die aan de functie worden meegegeven;</li>
+            <li>het arguments object is geen echte array, rest parameters zijn Array instances, 
+                wat betekent dat methoden als sort, map, forEach of pop direct kunnen worden toegepast;</li>
+            <li>het arguments object heeft extra eigenschappen .</li>
+            </ul>
+    </p>
     <script>
-        function extra (naam) {
 
-        let resultaat = 0
-
-        naam.forEach(naam => { resultat+= nombre ;
-        }); 
-
-        console.log(resultaat) ;
-    </script>
 </body>
 </html>
