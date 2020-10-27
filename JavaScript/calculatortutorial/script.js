@@ -41,6 +41,6 @@ const calculator = new Calculator(previousOperandTextElement, currentOperandText
 numberButtons.forEach(button => {
     button.addEventListener('click', () => {
         calculator.appendNumber(button.innerText)
-        calculatro.updateDisplay
+        calculator.updateDisplay
 })
 })
