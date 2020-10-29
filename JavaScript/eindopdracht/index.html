@@ -42,7 +42,7 @@
         <button onClick="calculate()" class="button2">=</button>
     </div>
     <script>
-        // <input type="button" value="On" id="onoff" onclick="onoff();">
+        
         let isCalculatorOn = false;
         function onoff() {
             const display = document.getElementById('display');
@@ -55,6 +55,8 @@
                 display.innerHTML = "0";
                 isCalculatorOn = true;
             }
+
+            
             // currentvalue = document.getElementById('onoff').value;
             // if (currentvalue == "Off") {
             //     document.getElementById("onoff").value = "On";
