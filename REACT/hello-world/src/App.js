@@ -10,7 +10,7 @@ import Stylesheet from './components/Stylesheet'
       return (
         <div className="App">
           
-          <Stylesheet primary={false} />
+          <Stylesheet primary={true} />
           <Greet/>
           <Welcome />
         </div>
