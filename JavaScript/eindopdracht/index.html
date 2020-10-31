@@ -14,37 +14,37 @@
 
         <div class="output">
             <div>
-                <button onclick="onoff()">On/off</button>
+                <button onclick="toggle()">On/off</button>
             </div>
             <div class="previous-operand"></div>
             <div class="current-operand"></div>
             <p id="display"></p>
         </div>
 
-        <button onclick="onClick(this)" id="clear" class="button1">AC</button>
-        <button onclick="onClick(this)" class="button1">+/-</button>
-        <button onclick="onClick(this)" class="button1">%</button>
-        <button onclick="onClick(this)" class="button2">/</button>
-        <button onclick="onClick(this)" class="button3">7</button>
-        <button onclick="onClick(this)">8</button>
-        <button onclick="onClick(this)">9</button>
-        <button onclick="onClick(this)" class="button2">x</button>
-        <button onclick="onClick(this)">4</button>
-        <button onclick="onClick(this)">5</button>
-        <button onclick="onClick(this)">6</button>
-        <button onclick="onClick(this)" class="button2">-</button>
-        <button onclick="onClick(this)">1</button>
-        <button onclick="onClick(this)">2</button>
-        <button onclick="onClick(this)">3</button>
-        <button onclick="onClick(this)" class="button2">+</button>
-        <button onclick="onClick(this)" class="span-two">0</button>
-        <button onclick="onClick(this)">.</button>
-        <button onClick="calculate()" class="button2">=</button>
+        <button onclick="calculate(this)" id="clear" class="button1">AC</button>
+        <button onclick="calculate(this)" class="button1">+/-</button>
+        <button onclick="calculate(this)" class="button1">%</button>
+        <button onclick="calculate(this)" class="button2">/</button>
+        <button onclick="calculate(this)" class="button3">7</button>
+        <button onclick="calculate(this)">8</button>
+        <button onclick="calculate(this)">9</button>
+        <button onclick="calculate(this)" class="button2">x</button>
+        <button onclick="calculate(this)">4</button>
+        <button onclick="calculate(this)">5</button>
+        <button onclick="calculate(this)">6</button>
+        <button onclick="calculate(this)" class="button2">-</button>
+        <button onclick="calculate(this)">1</button>
+        <button onclick="calculate(this)">2</button>
+        <button onclick="calculate(this)">3</button>
+        <button onclick="calculate(this)" class="button2">+</button>
+        <button onclick="calculate(this)" class="span-two">0</button>
+        <button onclick="calculate(this)">.</button>
+        <button onclick="getResult()" class="button2">=</button>
     </div>
     <script>
         
         let isCalculatorOn = false;
-        function onoff() {
+        function toggle() {
             const display = document.getElementById('display');
 
             // display.innerHTML != null ||  display.innerHTML != "" ||  display.innerHTML != nil 
@@ -55,43 +55,31 @@
                 display.innerHTML = "0";
                 isCalculatorOn = true;
             }
-
-            
-            // currentvalue = document.getElementById('onoff').value;
-            // if (currentvalue == "Off") {
-            //     document.getElementById("onoff").value = "On";
-
-            // } else {
-            //     document.getElementById("onoff").value = "Off";
-            // }
         }
 
+        let calculation = "";
 
-
-        let y = "";
-
-        function onClick(element) {
-            // console.log(element);
+        function calculate(element) {
             if (isCalculatorOn) {
                 document.getElementById("clear").innerHTML = 'c';
-                y = y + element.innerHTML;
-                console.log(y);
-                document.getElementById("display").innerHTML = y;
-                //console.log(y);
+                calculation = calculation + element.innerHTML;
+                console.log(calculation);
+                doCalculation(element.innerHTML);
+                document.getElementById("display").innerHTML = calculation;
             }
         }
 
-        function calculate() {
+        let result = 0;
+
+        function doCalculation(result) {
+
+        }
+
+        function getResult() {
             if (isCalculatorOn) {
-                let answer = eval(y);
-                console.log(answer);
-                y = answer;
-                document.getElementById("display").innerHTML = answer;
+                document.getElementById("display").innerHTML = result;
             }
         }
-
-
-
     </script>
 </body>
 
