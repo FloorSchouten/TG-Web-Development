@@ -11,7 +11,7 @@ import Stylesheet from './components/Stylesheet'
         <div className="App">
           
           <Stylesheet primary={true} />
-          <Greet/>
+          <Greet />
           <Welcome />
         </div>
       );
