@@ -46,7 +46,7 @@ function Work (){
                 </Carousel.Caption>
             </Carousel.Item>
             
-        </Carousel>;
+        </Carousel>
     </div>)
 
 }

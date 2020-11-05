@@ -1,0 +1,17 @@
+.color-contact { 
+    background-color: #ffd31d;
+    color: black;
+    
+}
+
+.Linkedin {
+
+    font-size: 48px; 
+    color: Dodgerblue;
+    src:fab fa-linkedin-in;
+    class="fa fa-spinner"
+
+    
+
+
+}
