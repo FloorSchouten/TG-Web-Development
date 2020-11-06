@@ -1,8 +1,8 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import werkFoto1 from "./img/foto1.jpg";
-import werkFoto2 from "./img/foto2.jpg";
-import werkFoto3 from "./img/foto3.jpg";
+import werkFoto1 from "./img/Foto1.jpg";
+import werkFoto2 from "./img/Foto2.jpg";
+import werkFoto3 from "./img/Foto3.jpg";
 
 
 function Work (){ 
@@ -16,8 +16,8 @@ function Work (){
                     alt="eerste project"
                 />
                 <Carousel.Caption>
-                    <h3>Project "Spraypaint"</h3>
-                    <p>Website met grafitti voor non-profitorganisatie</p>
+                    <h3>Project Molen</h3>
+                    <p>Website</p>
                 </Carousel.Caption>
             </Carousel.Item>
             
@@ -41,8 +41,8 @@ function Work (){
                 />
 
                 <Carousel.Caption>
-                    <h3>Project "Schildering"</h3>
-                    <p>Blog voor Amsterdams bedrijf</p>
+                    <h3>Project Schaap</h3>
+                    <p>Voor gemeente Alkmaar</p>
                 </Carousel.Caption>
             </Carousel.Item>
             

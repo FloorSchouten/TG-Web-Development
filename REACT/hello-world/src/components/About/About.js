@@ -11,17 +11,9 @@ import Portfolioimage from './images/0.jpg';
 
             <div >
                 <Jumbotron className="color-about">
-                    <h1>Portfolio</h1>
-                    <p>
-                        I'm in a web developer bootcamp
-                        Crawling through the trenches, 
-                        hitting the JavaScript obstacle course, 
-                        scaling the heigths of JavaScript.
-                        Exhausted  
-                        Learning a lot, blood sweat and tears, 
-                        after six months
-                        I'll be fierce
-                    </p>
+                    <div>
+                    <h1>About me</h1>
+                    <p>I'm training to become a web developer</p>
                     <p>
                         {/* <Container>
                             <Row>
@@ -33,6 +25,7 @@ import Portfolioimage from './images/0.jpg';
                             </Row>
                         </Container> */}
                     </p>
+                    </div>
                 </Jumbotron>
             </div>
 

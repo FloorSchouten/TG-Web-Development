@@ -16,10 +16,10 @@ function Navigation() {
     <Navbar className="color-nav" variant="light">
         <Navbar.Brand href="#home">Floor</Navbar.Brand>
         <Nav className="mr-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#work">Work</Nav.Link>
-            <Nav.Link href="#hello-world\src\components\Contact\Contact.js">Contact</Nav.Link>
+            <Nav.Link href="#Home">Home</Nav.Link>
+            <Nav.Link href="#About">About</Nav.Link>
+            <Nav.Link href="#Work">Work</Nav.Link>
+            <Nav.Link href="#Contact">Contact</Nav.Link>
 
         </Nav>
         <Form inline>
