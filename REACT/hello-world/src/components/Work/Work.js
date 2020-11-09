@@ -8,7 +8,7 @@ import werkFoto3 from "./img/Foto3.jpg";
 function Work (){ 
     return (
     <div>
-        <Carousel className="color-work">
+        <Carousel className="color-work" id="Work">
             <Carousel.Item>
                 <img
                     className="d-block w-100"
@@ -16,8 +16,8 @@ function Work (){
                     alt="eerste project"
                 />
                 <Carousel.Caption>
-                    <h3>Project Molen</h3>
-                    <p>Website</p>
+                    <h3>Project, product, plan</h3>
+                    <p>Highlight your project. Sell your product. Launch your plan.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             
@@ -29,8 +29,8 @@ function Work (){
                 />
 
                 <Carousel.Caption>
-                    <h3>Project "Muur"</h3>
-                    <p>Webshop</p>
+                <h3>Project, product, plan</h3>
+                    <p>Highlight your project. Sell your product. Launch your plan.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -41,8 +41,8 @@ function Work (){
                 />
 
                 <Carousel.Caption>
-                    <h3>Project Schaap</h3>
-                    <p>Voor gemeente Alkmaar</p>
+                <h3>Project, product, plan</h3>
+                    <p>Highlight your project. Sell your product. Launch your plan.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             
@@ -55,4 +55,4 @@ function Work (){
 
 
 
-export default Work
+export default Work;

@@ -6,12 +6,15 @@ import Jumbotron from 'react-bootstrap/Jumbotron'
     function Home() {
 
         return (
-            
-                <Jumbotron className="color-home">
+        <Jumbotron className="color-home" id="Home">
                     <div></div>
-                    <h1>Nice to meet you!</h1>
-                    <p>Please take a look at this portfolio. Scroll down to the LinkedIn button and let's meet!</p>
-                   
+                        <h1>Nice to meet you!</h1>
+                        <p>Look at this website!<br></br>
+                            It's made in React with Bootstrap components. <br></br>
+                            The navigation bar, the jumbotron segments and the carousel all work nicely. <br></br>
+                            In the contact segment, you can add contact information and links to social networks. 
+                        </p>
+                    
                 </Jumbotron>);
             
     }

@@ -1,5 +1,11 @@
 .color-home { 
-    background-color: #51adcf;
+    background-color: #51adcf !important;
     color: black;
+    
+}
+
+.jumbotron {
+    border-radius: 0%;
+    margin-bottom: 0%;
     
 }

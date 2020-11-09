@@ -1,7 +1,8 @@
 import React from 'react';
-import "./About.css";
+
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Image from 'react-bootstrap/Image';
+import "./About.css";
 import Portfolioimage from './images/0.jpg';
 
 
@@ -10,21 +11,21 @@ import Portfolioimage from './images/0.jpg';
         return (
 
             <div >
-                <Jumbotron className="color-about">
+                <Jumbotron className="color-about" id="About">
                     <div>
-                    <h1>About me</h1>
-                    <p>I'm training to become a web developer</p>
-                    <p>
-                        {/* <Container>
-                            <Row>
-                                
-                                <Col xs={6} md={4}> */}
-                                    <Image src= {Portfolioimage} roundedCircle />
-                                {/* </Col>
+                        <h1>About me</h1>
+                        <p>This is where you will find some information about my work, my ambitions, my skills</p>
+                        <p>
+                            {/* <Container>
+                                <Row>
+                                    
+                                    <Col xs={6} md={4}> */}
+                                        <Image src= {Portfolioimage} roundedCircle />
+                                    {/* </Col>
 
-                            </Row>
-                        </Container> */}
-                    </p>
+                                </Row>
+                            </Container> */}
+                        </p>
                     </div>
                 </Jumbotron>
             </div>
