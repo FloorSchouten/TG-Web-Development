@@ -13,7 +13,7 @@ import {
 function Navigation() {
 
     return (
-    <Navbar className="color-nav" variant="light">
+    <Navbar className="color-nav" variant="dark">
         <Navbar.Brand href="#home">Floor</Navbar.Brand>
         <Nav className="mr-auto">
             <Nav.Link href="#Home">Home</Nav.Link>

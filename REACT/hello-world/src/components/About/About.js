@@ -13,19 +13,19 @@ import Portfolioimage from './images/0.jpg';
             <div >
                 <Jumbotron className="color-about" id="About">
                     <div>
-                        <h1>About me</h1>
-                        <p>This is where you will find some information about my work, my ambitions, my skills</p>
-                        <p>
-                            {/* <Container>
-                                <Row>
-                                    
-                                    <Col xs={6} md={4}> */}
-                                        <Image src= {Portfolioimage} roundedCircle />
-                                    {/* </Col>
+                        
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                <h1>About me</h1>
+                                    This is where you will find information about my work, my ambitions, my skills
+                                </div>
+                                <div class="col">
+                                    <Image src= {Portfolioimage} className="imageMe" />
+                                </div>
+                            </div>
 
-                                </Row>
-                            </Container> */}
-                        </p>
+                        </div>
                     </div>
                 </Jumbotron>
             </div>

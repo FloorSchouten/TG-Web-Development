@@ -8,6 +8,7 @@
     "react-bootstrap": "^1.4.0",
     "react-burger-menu": "^1.1.6",
     "react-icons": "^3.11.0",
-    "react-sidebar": "^3.0.2"
+    "react-sidebar": "^3.0.2",
+    "vanta": "^0.5.21"
   }
 }

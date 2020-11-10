@@ -1,3 +1,15 @@
 .color-about {
     background-color: #a5ecd7;
 }
+
+.paragraphBox {
+    max-width: 400px;
+    padding: 50px;
+    margin: 20px;
+}
+
+.imageMe {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 50%;
+}
