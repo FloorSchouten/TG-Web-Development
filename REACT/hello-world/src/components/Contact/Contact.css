@@ -1,10 +1,17 @@
 .color-contact { 
     background-color: #e8ffc1;
     color: black;
+
     
     
 }
-
+.paragraphBox {
+    max-width: 400px;
+    margin: auto;
+    
+    /* padding: 50px; */
+    /* margin: 20px; */
+}
 .Linkedin {
 
     font-size: 48px; 

@@ -4,12 +4,19 @@
 
 .paragraphBox {
     max-width: 400px;
-    padding: 50px;
-    margin: 20px;
+    /* padding: 50px; */
+    /* margin: 20px; */
 }
 
 .imageMe {
-    max-width: 250px;
-    max-height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    transition: transform .2s;
 }
+
+  .imageMe:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+  }

@@ -12,16 +12,17 @@ import Portfolioimage from './images/0.jpg';
 
             <div >
                 <Jumbotron className="color-about" id="About">
-                    <div>
+                    <div >
                         
                         <div class="container">
                             <div class="row">
                                 <div class="col">
-                                <h1>About me</h1>
-                                    This is where you will find information about my work, my ambitions, my skills
-                                </div>
-                                <div class="col">
                                     <Image src= {Portfolioimage} className="imageMe" />
+                                </div>
+                                <div class="col" className="paragraphBox">
+                                <h1>About me</h1>
+                                    This is where you will find information about your work, your ambitions, your skills
+                                    and anything that would be important for your business
                                 </div>
                             </div>
 
