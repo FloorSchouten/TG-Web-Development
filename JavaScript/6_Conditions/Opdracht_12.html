@@ -18,9 +18,9 @@
     function checkNumber () {
         let getInputValue = document.getElementById("number").value;
         
-        if (getInputValue > 30 && 35 || getInputValue > 40 && 45) {
+        if ((getInputValue > 30 && getInputValue < 35) || (getInputValue > 40 && getInputValue < 45)) {
             document.getElementById("label").innerText = "het getal is tussen 30 en 35 of het getal is tussen 40 en 45";
-        }  else {
+        } else {
             document.getElementById("label").innerText = '';
         } 
 
