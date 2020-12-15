@@ -1,14 +1,5 @@
 {
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "bootstrap": "^4.5.3",
-    "ng-sidebar": "^9.4.2",
-    "react": "^17.0.1",
-    "react-bootstrap": "^1.4.0",
-    "react-burger-menu": "^1.1.6",
-    "react-icons": "^3.11.0",
-    "react-sidebar": "^3.0.2",
-    "vanta": "^0.5.21"
+    "create-react-app": "^4.0.1"
   }
 }
