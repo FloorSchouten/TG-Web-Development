@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ToDoItemsList from '../json/ToDoItems.json';
 
 class TodolistPage extends React.Component {
 
@@ -7,31 +8,58 @@ class TodolistPage extends React.Component {
         super(props); 
 
         this.state = {
-            itemsList: []
+            itemsList: ToDoItemsList
         }
     }
 
     addToItemList() {
-        const items = this.state.itemsList;
+        const itemsList = this.state.itemsList;
+        const date = this.props.selectedDate;
+        const newItem = {
+            date: date,
+            name: document.getElementById('search').value
+        }
 
-        items.push(document.getElementById('search').value);
+        itemsList.push(newItem);
 
-        this.setState({itemsList: items});
-        console.log(items);
+        this.setState({itemsList: itemsList});
+
+        console.log(itemsList);
+    }
+
+    filterItemsByDate(itemsList) {
+        const {selectedDate} = this.props;
+
+        return itemsList.filter(function(item) {
+            return item.date === selectedDate;
+        });
+    }
+
+    deleteToDoItem(item) {
+        const {selectedDate} = this.props;
+        const {itemsList} = this.state;
+
+        // itemsList.
     }
 
     render() {
         const {selectedDate} = this.props;
         const {itemsList} = this.state;
+        
+        const currentItems = this.filterItemsByDate(itemsList);
 
         return (
             <div>
-                <h1>To Do List for {selectedDate}</h1>
-                <input type="text" placeholder="Search.." className="search" id="search" />
-                <button type="submit" onClick={() => this.addToItemList()}><i className="fa fa-search" />Add Item</button>
+                <h1>To Do Items for {selectedDate}</h1>
+                <input type="text" placeholder="What needs to get done?" className="search" id="search" />
+                <button type="submit" onClick={() => this.addToItemList()}><i className="fa fa-search" />Add to list</button>
                 <ul>
-                    {itemsList.map((item, key) => (
-                        <li key={key}>{item}</li>
+                    {currentItems.map((item, key) => (
+                        <li key={key}>                      
+                            <input type="checkbox" id="toDoItem" name="toDoItem" value="CheckBox" />
+                            <label htmlFor="toDoItem"> {item.name}</label>
+                            <button onClick={(item) => this.deleteToDoItem(item)}>X</button>
+                        </li>
                     ))}
                 </ul>
             </div>
@@ -40,14 +68,12 @@ class TodolistPage extends React.Component {
 }
 
 TodolistPage.propTypes = {
-    selectedDate: PropTypes.number
+    selectedDate: PropTypes.string
 }
 
 export default TodolistPage;
 
-// var obj = { date, todoItem };
-// var myJSON = JSON.stringify(obj);
+{/* <p style={isDone && strikeThrough}></p> */}
 
-// document.getElementById("demo").innerHTML = myJSON;
-
-// this.props.date.getTime() receiving end
+// var isDone = true;
+// const strikeThrough = { textDecoration: "line-through" };

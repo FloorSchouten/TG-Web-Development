@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { useState} from 'react';
 import CalendarPage from "./components/calendar";
+import TodolistPage from "./components/TodolistPage";
 import "./App.css";
 
 function App() {
+    const [inputText, setInputText] = useState ("");
     return (
         <div className="heleApp">
-         
-                <h1>Honey-do List</h1>
-                
 
-            <CalendarPage />
+                <TodolistPage />
+                <CalendarPage />
             
         </div>
     )

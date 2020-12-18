@@ -31,22 +31,31 @@ class CalendarPage extends React.Component {
     }
   }
 
-  openToDoList(date) {
-    this.setState({
-      isToDoListOpen: this.state.isToDoListOpen === true ? false : true,
-      selectedDate: date.getDate()
-    });
+  handleDateClick(date) {
+    const {isToDoListOpen, selectedDate} = this.state;
+    const dayOfMonth = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+
+    console.log(dayOfMonth);
+
+    const isDoubleClick = selectedDate.toDateString() === dayOfMonth.toDateString();
+
+    if (isToDoListOpen && isDoubleClick){
+      this.setState({isToDoListOpen: false});
+    } else {
+      this.setState({
+        selectedDate: dayOfMonth,
+        isToDoListOpen: true
+      });
+    }
   }
   
   render() {
     const {isToDoListOpen, selectedDate} = this.state;
 
-    console.log(selectedDate);
-
     return (
       <>
-        {isToDoListOpen && <TodolistPage selectedDate={selectedDate} />}
-        <Calendar tileClassName={({ date }) => this.getTileStyle(date)} tileContent={({ date }) => this.getHoliday(date)} onClickDay={(day) => this.openToDoList(day)} />
+        {isToDoListOpen && <TodolistPage selectedDate={selectedDate.toDateString()} />}
+        <Calendar tileClassName={({ date }) => this.getTileStyle(date)} tileContent={({ date }) => this.getHoliday(date)} onClickDay={(day) => this.handleDateClick(day)} />
       </>
     );
   }

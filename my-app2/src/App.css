@@ -1,0 +1,10 @@
+.header1 {
+    color: blue;
+    font-size: larger;
+}
+.picture {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
